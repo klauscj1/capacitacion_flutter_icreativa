@@ -1,4 +1,6 @@
+import 'package:app_prueba/ui/pages/drawer_page.dart';
 import 'package:app_prueba/ui/pages/images_page.dart';
+import 'package:app_prueba/ui/pages/pageview_page.dart';
 import 'package:app_prueba/ui/pages/stack_page.dart';
 
 //import 'package:app_prueba/ui/pages/home_page.dart';
@@ -12,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Material App',
-      home: StackPage(),
+      home: DrawerPage(),
     );
   }
 }
