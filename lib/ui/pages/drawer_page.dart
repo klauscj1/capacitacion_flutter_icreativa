@@ -1,4 +1,5 @@
 import 'package:app_prueba/models/menu_item_model.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class DrawerPage extends StatelessWidget {
@@ -11,7 +12,7 @@ class DrawerPage extends StatelessWidget {
         title: Text('Drawer'),
       ),
       body: Center(
-        child: Text('Drawer page'),
+        child: Text('drawer page'),
       ),
       drawer: Drawer(
         child: ListView(
