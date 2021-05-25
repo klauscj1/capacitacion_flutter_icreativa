@@ -24,7 +24,7 @@ class ListViewBuilderPage extends StatelessWidget {
                 context: context,
                 builder: (context) {
                   return DialogoPersonalizado(
-                    android: false,
+                    android: true,
                     usuario: usuario,
                     onPressOk: () {
                       print('ok');

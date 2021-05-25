@@ -1,3 +1,5 @@
+import 'package:app_prueba/routes.dart';
+import 'package:app_prueba/ui/pages/backgroud_color_page.dart';
 import 'package:app_prueba/ui/pages/drawer_page.dart';
 import 'package:app_prueba/ui/pages/listview_builder_page.dart';
 
@@ -12,8 +14,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Material App',
-      home: ListViewBuilderPage(),
       theme: ThemeData.light(),
+      routes: rutas(),
     );
   }
 }
