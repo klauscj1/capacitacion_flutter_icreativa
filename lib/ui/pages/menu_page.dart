@@ -10,6 +10,23 @@ class MenuPage extends StatelessWidget {
       appBar: AppBar(
         title: Text('Menu'),
       ),
+      drawer: Drawer(
+        child: ListView.builder(
+          itemCount: paginas.length,
+          itemBuilder: (BuildContext context, int index) {
+            final ruta = paginas[index];
+            return ListTile(
+              title: Text('${ruta.titulo}'),
+              leading: Icon(Icons.calendar_today),
+              trailing: Icon(Icons.chevron_right),
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.pushNamed(context, ruta.ruta);
+              },
+            );
+          },
+        ),
+      ),
       body: ListView.builder(
         itemCount: paginas.length,
         itemBuilder: (BuildContext context, int index) {
